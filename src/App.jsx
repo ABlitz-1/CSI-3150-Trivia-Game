@@ -4,7 +4,7 @@ import Quiz from './pages/quiz.jsx'
 import Result from './pages/result.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return(
     <div>
       <Router>
@@ -17,3 +17,5 @@ function App() {
     </div>
   )
 }
+
+export default App
