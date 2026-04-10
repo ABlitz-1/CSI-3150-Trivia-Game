@@ -4,7 +4,7 @@ import { categories, getQuestions } from '../requests'
 import { ProgressBar, Spinner } from 'react-bootstrap'
 import { useContext, useState } from 'react'
 import Question from '../components/question'
-import QuizContext from '../../QuizContext'
+import QuizContext from './QuizContext'
 
 const Quiz = () => {
   const navigate = useNavigate()
