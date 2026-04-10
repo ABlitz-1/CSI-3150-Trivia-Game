@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
-import QuizContext from './src/QuizContext'
+import QuizContext from '../QuizContext'
 import { useNavigate } from 'react-router-dom'
 
 const Result = () => {
