@@ -1,7 +1,7 @@
 import React from 'react';
-import Menu from './pages/menu.jsx'
-import Quiz from './pages/quiz.jsx'
-import Result from './pages/result.jsx'
+import Menu from './pages/menu'
+import Quiz from './pages/quiz'
+import Result from './pages/result'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {

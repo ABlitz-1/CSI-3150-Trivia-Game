@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Form } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
-import { cats, diff } from '../requests.js'
+import { cats, diff } from '../requests'
 
 const Menu = () => {
   const navigate = useNavigate()

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
-import QuizContext from '../QuizContext.jsx'
+import QuizContext from '../QuizContext'
 
 const shuffle = (array) => {
   return array.sort(() => Math.random() - 0.5)
