@@ -1,13 +1,7 @@
-import {
-  defineConfig
-} from 'vite'
-
-const path = require('path')
-
-export default defineConfig({
+export default {
   plugins: [],
   define: {
     'process.env': {}
   },
   base: './',
-})
+}
