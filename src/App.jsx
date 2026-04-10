@@ -1,7 +1,7 @@
 import React from 'react';
-import Menu from './pages/menu'
-import Quiz from './pages/quiz'
-import Result from './pages/result'
+import Menu from './pages/Menu'
+import Quiz from './pages/Quiz'
+import Result from './pages/Result'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
@@ -10,8 +10,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Menu />} />
-          <Route path="/Quiz/:category/:difficulty/" element={<Quiz />} />
-          <Route path="/Results" element={<Result />} />
+          <Route path="/quiz/:category/:difficulty/" element={<Quiz />} />
+          <Route path="/results" element={<Result />} />
         </Routes>
       </Router>
     </div>
