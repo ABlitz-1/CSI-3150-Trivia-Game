@@ -7,12 +7,12 @@ export const getQuestions = ({ category, difficulty }) => {
     .then((res) => res.data)
 }
 
-export const categories = [
-  {label: '', value: 9 },
-  {label: '', value: 12 },
-  {label: '', value: 17 },
-  {label: '', value: 21 },
-  {label: '', value: 22 },
+export const cats = [
+  {label: 'General Knowledge', value: 9 },
+  {label: 'Entertainment: Music', value: 12 },
+  {label: 'Science and Nature', value: 17 },
+  {label: 'Sports', value: 21 },
+  {label: 'Geography', value: 22 },
 ]
 
 export const difficulty = ['easy', 'medium', 'hard']
