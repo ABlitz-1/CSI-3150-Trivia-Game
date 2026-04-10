@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { useNavigate, useParams } from 'react-router-dom'
-import { categories, getQuestions } from '../requests'
+import { cats, getQuestions } from '../requests'
 import { ProgressBar, Spinner } from 'react-bootstrap'
 import { useContext, useState } from 'react'
 import Question from '../components/question.jsx'
@@ -9,7 +9,7 @@ import QuizContext from '../QuizContext.jsx'
 const Quiz = () => {
   const navigate = useNavigate()
   const [isAnswered, setIsAnswered] = useState(false)
-  const { category, difficulty } = useParams()
+  const { cat, diff } = useParams()
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, scoreDispatch] = useContext(QuizContext)
 
@@ -59,10 +59,10 @@ const Quiz = () => {
         <div>
           <div>
             <div>
-              {categories.find(cat => cat.value === Number(category)).label}
+              {cats.find(cat => cat.value === Number(category)).label}
             </div>
             <div>
-              {difficulty}
+              {diff}
             </div>
           </div>
           <ProgressBar
