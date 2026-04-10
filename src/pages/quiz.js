@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { categories, getQuestions } from '../requests'
 import { ProgressBar, Spinner } from 'react-bootstrap'
 import { useContext, useState } from 'react'
-import Question from '../components/Question'
+import Question from '../components/question'
 import QuizContext from '../../QuizContext'
 
 const Quiz = () => {
