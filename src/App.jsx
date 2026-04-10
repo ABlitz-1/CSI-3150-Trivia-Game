@@ -10,8 +10,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Menu />} />
-          <Route path="/quiz/:category/:difficulty/" element={<Quiz />} />
-          <Route path="/results" element={<Result />} />
+          <Route path="/Quiz/:category/:difficulty/" element={<Quiz />} />
+          <Route path="/Results" element={<Result />} />
         </Routes>
       </Router>
     </div>
