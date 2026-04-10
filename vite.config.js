@@ -1,5 +1,6 @@
+import react from '@vitejs/plugin-react'
 export default {
-  plugins: [],
+  plugins: [react()],
   define: {
     'process.env': {}
   },
