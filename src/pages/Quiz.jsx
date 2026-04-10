@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 import { useNavigate, useParams } from 'react-router-dom'
-import { cats, getQuestions } from '../requests'
+import { cats, getQuestions } from './requests'
 import { ProgressBar, Spinner } from 'react-bootstrap'
 import { useContext, useState } from 'react'
-import Question from '../components/question'
-import QuizContext from '../QuizContext'
+import Question from './components/question'
+import QuizContext from './QuizContext'
 
 const Quiz = () => {
   const navigate = useNavigate()
