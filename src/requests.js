@@ -15,4 +15,4 @@ export const cats = [
   {label: 'Geography', value: 22 },
 ]
 
-export const difficulty = ['easy', 'medium', 'hard']
+export const diff = ['easy', 'medium', 'hard']
