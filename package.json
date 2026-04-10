@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "react",
-    "build": "react build",
+    "build": "react-scripts build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "react preview",
+    "preview": "react-scripts preview",
     "server": "json-server -p3001 --watch db.json"
   },
   "dependencies": {
