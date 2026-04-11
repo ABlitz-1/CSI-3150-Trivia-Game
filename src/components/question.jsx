@@ -37,7 +37,7 @@ const Question = ({ question, setIsAnswered, isAnswered}) => {
     <div>
       <div>
         <div>
-          <div dangerouslySetInnerHTML={{ __html: question.question }} />
+          <div dangerouslySetInnerHTML={{ __html: question?.question }} />
         </div>
         <div className="list-group my-3">
           {isAnswered
