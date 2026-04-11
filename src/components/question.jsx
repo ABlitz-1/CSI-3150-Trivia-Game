@@ -12,7 +12,7 @@ const Question = ({ question, setIsAnswered, isAnswered}) => {
   useEffect(() => {
     const shuffledOptions = shuffle([
       question?.correct_answer,
-      ...question?.incorrect_answers,
+      question?.incorrect_answers,
     ])
     optionsDispatch({
       type: 'SET_OPTIONS',
