@@ -1,4 +1,5 @@
 import { createContext, useReducer } from 'react'
+import React from 'react'
 
 const optionsReducer = (state, action) => {
   switch (action.type) {
