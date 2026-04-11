@@ -59,7 +59,7 @@ const Quiz = () => {
         <div>
           <div>
             <div>
-              {cats.find(cat => cat.value === Number(category)).label}
+              {cats.find(cat => cat.value === Number(cat)).label}
             </div>
             <div>
               {diff}
