@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import  Form  from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import { cats, diff } from '../requests'
 
@@ -37,7 +37,7 @@ console.log('Component:', Menu);
         <section>
           <h3>Select Category</h3>
           {cats.map((cat) => ( 
-            <Form.check 
+            <Form.Check 
               key={cat.value}
               type="radio"
               id={`${cat.label}`}
@@ -51,7 +51,7 @@ console.log('Component:', Menu);
         <section>
           <h3>Select Difficulty</h3>
           {diff.map((option) => ( 
-            <Form.check 
+            <Form.Check 
               key={option}
               type="radio"
               id={`${option}`}
