@@ -3,12 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
   return {
-    plugins: [react({
-      babel: {
-        plugins: [
-          ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }],
-        ]
-      },
-    })],
-  };
+    plugins: [react({ jsxRuntime: 'classic' })]
+  }
 });
