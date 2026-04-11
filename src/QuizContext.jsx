@@ -26,7 +26,6 @@ const QuizContext = createContext()
 export const QuizContextProvider = (props) => {
   const [options, optionsDispatch] = useReducer(optionsReducer, [])
   const [score, scoreDispatch] = useReducer(scoreReducer, null)
-
   return(
     <QuizContext.Provider value={[score, scoreDispatch, options, optionsDispatch]}>
       {props.children}

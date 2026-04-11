@@ -45,10 +45,10 @@ const Question = ({ question, setIsAnswered, isAnswered}) => {
                 key={i}
                 type="button"
                 className={`list-group-item list-group-item-action my-1 rounded-pill disabled ${
-                  opt === question.correct_answer && 'bg-success border border-success text-white'
+                  opt === question?.correct_answer && 'bg-success border border-success text-white'
                 } ${
                   opt === selectedOption &&
-                    opt !== question.correct_answer &&
+                    opt !== question?.correct_answer &&
                     'bg-danger border border-danger text-white'
                 }`}
                 disabled
