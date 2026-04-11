@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import QuizContext from '../QuizContext'
 import { useNavigate } from 'react-router-dom'
-import React from 'react'
 
 const Result = () => {
   const [score, scoreDispatch] = useContext(QuizContext)
