@@ -32,6 +32,7 @@ const Question = ({ question, setIsAnswered, isAnswered}) => {
   }
 
   const displayedOptions = options
+  console.log('Component:', Question);
   return (
     <div>
       <div>

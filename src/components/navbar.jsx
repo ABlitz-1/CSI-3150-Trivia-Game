@@ -1,4 +1,5 @@
 const Navbar = () => {
+  console.log('Component:', Navbar);
   return (
     <nav className="navbar bg-none">
       <div className="container">

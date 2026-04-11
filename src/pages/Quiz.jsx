@@ -52,7 +52,7 @@ const Quiz = () => {
   }
 
   const questions = result.data.results
-
+  console.log('Component:', Quiz);
   return(
     <div>
       <div>

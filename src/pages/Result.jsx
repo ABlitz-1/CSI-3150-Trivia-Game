@@ -27,7 +27,7 @@ const Result = () => {
   }
 
   const scorePct = Math.round((score / 10) * 100)
-  
+  console.log('Component:', Result);
   return (
     <div>
       <h3>Result</h3>

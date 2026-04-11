@@ -30,7 +30,7 @@ const Menu = () => {
     navigate(`/quiz/${formData.cat}/${formData.diff}/`)
   }
 
-
+console.log('Component:', Menu);
   return (
     <div>
       <Form onSubmit={startQuiz}>
