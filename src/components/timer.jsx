@@ -8,7 +8,7 @@ const Timer = ({ onTimeout, timeLimit }) => {
     setTimeLeft(timeLimit)
     const timerInt = setInterval(() => {
       setTimeLeft((prev) => {
-        if (prev <= 1) {
+        if (prev === 0) {
           clearInterval(timerInt)
           onTimeout()
           return 0;
