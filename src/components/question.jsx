@@ -5,14 +5,14 @@ const shuffle = (array) => {
   return array.sort(() => Math.random() - 0.5)
 }
 
-const Question = ({ question, setIsAnswered, isAnswered}) => {
+const Question = ({ question, setIsAnswered, isAnswered }) => {
   const [selectedOption, setSelectedOption] = useState('')
   const [score, scoreDispatch, options, optionsDispatch] = useContext(QuizContext)
 
   useEffect(() => {
     const shuffledOptions = shuffle([
       question?.correct_answer,
-      question?.incorrect_answers,
+      ...question?.incorrect_answers,
     ])
     optionsDispatch({
       type: 'SET_OPTIONS',
@@ -32,7 +32,7 @@ const Question = ({ question, setIsAnswered, isAnswered}) => {
   }
 
   const displayedOptions = options
-  console.log('Component:', Question);
+  displatedOptions.split(',')
   return (
     <div>
       <div>
