@@ -1,9 +1,9 @@
 import axios from 'axios'
 const baseUrl = 'https://opentdb.com/api.php?amount=10&type=multiple'
 
-export const getQuestions = ({ category, difficulty }) => {
+export const getQuestions = ({ cat, diff }) => {
   return axios
-    .get(`${baseUrl}&difficulty=${difficulty}&category=${category}`)
+    .get(`${baseUrl}&difficulty=${diff}&category=${cat}`)
     .then((res) => res.data)
 }
 
