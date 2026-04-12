@@ -32,7 +32,6 @@ const Question = ({ question, setIsAnswered, isAnswered }) => {
   }
 
   const displayedOptions = options
-  displayedOptions.split(',')
   return (
     <div>
       <div>
