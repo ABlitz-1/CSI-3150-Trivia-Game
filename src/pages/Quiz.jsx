@@ -58,6 +58,8 @@ const Quiz = () => {
     <div>
       <div>
         <Timer
+          key={currentQuestion}
+          questionId={currentQuestion}
           timeLimit='15'
           onTimeout={questions.length === currentQuestion + 1 ? (
             finishQuiz
