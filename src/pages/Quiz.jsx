@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { cats, getQuestions } from '../requests'
 import { ProgressBar, Spinner } from 'react-bootstrap'
 import { useContext, useState } from 'react'
+import Timer from '../components/timer'
 import Question from '../components/question'
 import QuizContext from '../QuizContext'
 
@@ -56,6 +57,10 @@ const Quiz = () => {
   return(
     <div>
       <div>
+        <Timer
+          timeLimit='15'
+          onTimeout={isAnswered === false && nextQuestion}
+          />
         <div>
           <div>
             <div>
