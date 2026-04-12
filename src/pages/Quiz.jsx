@@ -59,7 +59,7 @@ const Quiz = () => {
       <div>
         <Timer
           timeLimit='15'
-          onTimeout={isAnswered === false && nextQuestion}
+          onTimeout={nextQuestion}
           />
         <div>
           <div>
