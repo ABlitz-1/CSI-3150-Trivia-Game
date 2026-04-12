@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const Timer = ({ onTimeout, timeLimit }) => {
+const Timer = ({ onTimeout, timeLimit, questionId }) => {
   const [timeLeft, setTimeLeft] = useState(timeLimit)
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Timer = ({ onTimeout, timeLimit }) => {
       })
     }, 1000)
     return () => clearInterval(timerInt)
-  }, [timeLimit, onTimeout])
+  }, [questionId, timeLimit, onTimeout])
 
   return (<div>{timeLeft}s</div>)
 }
