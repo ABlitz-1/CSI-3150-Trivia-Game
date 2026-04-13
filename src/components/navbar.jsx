@@ -1,9 +1,8 @@
 const Navbar = () => {
-  console.log('Component:', Navbar);
   return (
     <nav className="navbar bg-none">
       <div className="container">
-        <a clasName="navbar-brand text-light fw-bolder fs-3" href="/">
+        <a clasName="navbar-brand font-impact text-light fw-bolder fs-3" style="font-size:14px;" href="/">
           Guess It Trivia
         </a>
       </div>

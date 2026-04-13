@@ -4,5 +4,12 @@
 
 .text-white {
   color: lightgray;
-  font-family: serif
+}
+
+.font-sans {
+  font-family: sans-serif;
+}
+
+.font-impact {
+  font-family: impact;
 }
