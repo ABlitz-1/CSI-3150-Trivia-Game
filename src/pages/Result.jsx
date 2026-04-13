@@ -24,7 +24,7 @@ const Result = () => {
   }
 
   const retakeQuiz = () => {
-    scoreDiscaptch({
+    scoreDispatch({
       type: 'RESET_SCORE',
     })
     navigate(-1)
@@ -39,10 +39,10 @@ const Result = () => {
       <h5>You scored {score} out of {10} ({scorePct}%)</h5>
       <h6>Highscore: {highscore || 0} ({highScorePct}%)</h6>
       <section className="d-flex flex-row align-items-center justify-content-center my-3 w-100">
-        <button className="btn btn-info w-25 mx-3" onClick={goToMainMenu}>
+        <button className="btn btn-info text-white w-25 mx-3" onClick={goToMainMenu}>
           Main Menu
         </button>
-        <button className="btn btn-info w-25 mx-3" onClick={retakeQuiz}>
+        <button className="btn btn-info text-white w-25 mx-3" onClick={retakeQuiz}>
           Retake Quiz
         </button>
       </section>

@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="navbar bg-none">
+    <nav className="navbar bg-none border-bottom border-dark">
       <div className="container">
         <a className="navbar-brand font-impact text-light fw-bolder fs-3" style={{fontSize: "14px"}} href="/">
           Guess It Trivia

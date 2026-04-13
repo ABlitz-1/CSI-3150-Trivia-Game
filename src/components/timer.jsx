@@ -24,7 +24,7 @@ const Timer = ({ onTimeout, timeLimit, questionId }) => {
     return () => clearInterval(timerInt)
   }, [questionId, timeLimit])
 
-  return (<div>{timeLeft}s</div>)
+  return (<div style={{ fontWeight: "bold" }}>{timeLeft}s</div>)
 }
 
 export default Timer;
