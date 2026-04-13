@@ -12,7 +12,7 @@ const Menu = () => {
   })
 
   let highscore = 0
-  if ( useState(localStorage.getItem('highScore')) !== null) {
+  if ( useState(localStorage.getItem('highScore')) !== undefined) {
     highscore = useState(localStorage.getItem('highScore'))
   }
   const highScorePct = highscore === null ? 0 : Math.round((highscore / 10) * 100)
