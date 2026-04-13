@@ -1,3 +1,8 @@
 .bg-light {
-  background: linear-gradient(45deg, blue, purple);
+  background: linear-gradient(45deg, purple, blue, skyblue);
+}
+
+.text-white {
+  color: lightgray;
+  font-family: serif
 }

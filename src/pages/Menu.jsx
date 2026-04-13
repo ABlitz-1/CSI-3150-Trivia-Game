@@ -32,8 +32,8 @@ const Menu = () => {
 
 console.log('Component:', Menu);
   return (
-    <div>
-      <Form onSubmit={startQuiz}>
+    <div className="container d-flex flex-column align-items-start justify-content-center w-100 py-5">
+      <Form onSubmit={startQuiz} className="my-2 d-flex flex-column align-items-center justify-content-center">
         <section>
           <h3>Select Category</h3>
           {cats.map((cat) => ( 

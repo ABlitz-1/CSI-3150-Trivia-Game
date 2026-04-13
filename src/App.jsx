@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return(
-    <div className="bg-light" style={{ minHeight: '100vh' }}>
+    <div className="bg-light text-white" style={{ minHeight: '100vh' }}>
       <Navbar />
       <Router>
         <Routes>
