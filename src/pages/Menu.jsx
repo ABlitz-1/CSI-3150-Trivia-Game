@@ -11,7 +11,10 @@ const Menu = () => {
     diff: '',
   })
 
-  const highscore = null ? 0 : useState(localStorage.getItem('highScore'))
+  let highscore = useState(localStorage.getItem('highScore'))
+  if ( highscore === null || highscore.length === 0 ) {
+    highscore = 0;
+  }
   const highScorePct = highscore === null ? 0 : Math.round((highscore / 10) * 100)
 
   const selectCat = (event) => {
