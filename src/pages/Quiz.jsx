@@ -37,7 +37,7 @@ const Quiz = () => {
 
   if (result.isLoading) {
     return (
-      <div>
+      <div className='d-flex flex-column align-items-center justify-content-center my-5'>
         <Spinner amination='grow'/>
         <h3>Loading Questions ...</h3>
       </div>
@@ -46,7 +46,7 @@ const Quiz = () => {
 
   if (result.error) {
     return (
-      <div>
+      <div className='d-flex flex-column align-items-center justify-content-center my-5'>
         <h3>An Error Occured</h3>
         <button onClick={() => location.reload()}>Reload</button>
       </div>
@@ -57,7 +57,7 @@ const Quiz = () => {
   console.log('Component:', Quiz);
   return(
     <div>
-      <div>
+      <div className="container my-5">
         <Timer
           key={currentQuestion}
           questionId={currentQuestion}
@@ -68,12 +68,12 @@ const Quiz = () => {
             nextQuestion
           )}
           />
-        <div>
-          <div>
-            <div>
+        <div className="d-flex flex-column justify-content-start align-items-start">
+          <div className="d-flex flex-row justify-content-between align-items-center w-100 my-2">
+            <div className="bg-ifo p-2 rounded-1">
               {cats.find(cat => cat.value === Number(cat))?.label}
             </div>
-            <div>
+            <div className="bg-warning p-2 rounded-1">
               {diff}
             </div>
           </div>
@@ -82,9 +82,9 @@ const Quiz = () => {
             now={Math.round(((currentQuestion + 1) / 10) * 100)}
             className="w-100"
             />
-            <span>Question {currentQuestion + 1}/10</span>
+            <span className="my-2">Question {currentQuestion + 1}/10</span>
         </div>
-        <div>
+        <div className="my-4 d-flex flex-column justfy-content-center">
           <Question
             question={questions[currentQuestion]}
             setIsAnswered={setIsAnswered}
@@ -92,7 +92,7 @@ const Quiz = () => {
             />
             {questions.length === currentQuestion + 1 ? (
               <button
-                className={` ${
+                className={`btn btn-primary align-self-end ${
                   isAnswered === false && 'disabled'
                 }`}
                 onClick={finishQuiz}
@@ -101,7 +101,7 @@ const Quiz = () => {
                 </button>
             ) : (
                 <button
-                  className={` ${isAnswered == false && 'disabled'
+                  className={`btn btn-primary align-self-end ${isAnswered == false && 'disabled'
                   }`}
                   onClick={nextQuestion}
                 >

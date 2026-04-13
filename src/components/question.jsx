@@ -35,7 +35,7 @@ const Question = ({ question, setIsAnswered, isAnswered }) => {
   return (
     <div>
       <div>
-        <div>
+        <div className="fs-4 fw-bold lead">
           <div dangerouslySetInnerHTML={{ __html: question?.question }} />
         </div>
         <div className="list-group my-3">
@@ -54,7 +54,7 @@ const Question = ({ question, setIsAnswered, isAnswered }) => {
                 disabled
                 onClick={() => selectOption(opt)}
               >
-                <div dangerouslySetInnerHTML={{ __html: opt }} />
+                <div className="font-sans" style={{ fontWeight: "bold" }} dangerouslySetInnerHTML={{ __html: opt }} />
               </button>
             ))
             : displayedOptions.map((opt, i) => (
@@ -64,7 +64,7 @@ const Question = ({ question, setIsAnswered, isAnswered }) => {
                 className="list-group-item list-group-item-action my-1 rounded-pill"
                 onClick={() => selectOption(opt)}
               >
-                <div dangerouslySetInnerHTML={{ __html: opt}} />
+                <div className="font-sans" style={{ fontWeight: "bold" }} dangerouslySetInnerHTML={{ __html: opt}} />
               </button>
             ))}
         </div>
