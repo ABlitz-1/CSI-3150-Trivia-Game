@@ -10,7 +10,7 @@ import QuizContext from '../QuizContext'
 const Quiz = () => {
   const navigate = useNavigate()
   const [isAnswered, setIsAnswered] = useState(false)
-  const { category, diff } = useParams()
+  const { cat, diff } = useParams()
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, scoreDispatch] = useContext(QuizContext)
 

@@ -11,6 +11,9 @@ const Menu = () => {
     diff: '',
   })
 
+  const highscore = useState(localStorage.getItem('highScore'))
+  const highScorePct = highscore === null ? 0 : Math.round((highscore / 10) * 100)
+
   const selectCat = (event) => {
     setFormData((prev) => ({
       ...prev,
@@ -73,6 +76,9 @@ console.log('Component:', Menu);
             Submit
           </button>
       </Form>
+      <div className="my-2 d-flex flex-column align-items-center justify-content-center">
+        <h6>Highscore: {highscore || 0} ({highScorePct}%)</h6>
+      </div>
     </div>
   )
 }
