@@ -31,8 +31,7 @@ const Result = () => {
   }
 
   const scorePct = Math.round((score / 10) * 100)
-  const highScorePct = highscore === null ? 0 : Math.round((highscore / 10) * 100)
-
+  
   return (
     <div className="container d-flex flex-column align-items-center justify-content-center my-5">
       <h3>Result</h3>
