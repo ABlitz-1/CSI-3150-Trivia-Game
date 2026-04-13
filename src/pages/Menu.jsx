@@ -15,7 +15,7 @@ const Menu = () => {
   if (localStorage.getItem('highScore') !== null) {
     highscore = useState(localStorage.getItem('highScore'))
   }
-  const highScorePct = highscore === null ? 0 : Math.round((highscore / 10) * 100)
+  const highScorePct = Math.round((highscore / 10) * 100)
 
   const selectCat = (event) => {
     setFormData((prev) => ({
