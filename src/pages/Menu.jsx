@@ -35,7 +35,7 @@ console.log('Component:', Menu);
     <div className="container d-flex flex-column align-items-start justify-content-center font-sans w-100 py-5">
       <Form onSubmit={startQuiz} className="my-2 d-flex flex-column align-items-center justify-content-center">
         <section>
-          <h3>Select Category</h3>
+          <h3 className="my-3">Select Category</h3>
           {cats.map((cat) => ( 
             <Form.Check 
               key={cat.value}
@@ -49,7 +49,7 @@ console.log('Component:', Menu);
             ))}
         </section>
         <section>
-          <h3>Select Difficulty</h3>
+          <h3 className="my-3">Select Difficulty</h3>
           {diff.map((option) => ( 
             <Form.Check 
               key={option}
