@@ -12,7 +12,7 @@ const Result = () => {
       navigate('/')
     } else if (score > highscore) {
       setHighScore(score)
-      localStorage.setItem('highScore')
+      localStorage.setItem('highScore', JSON.stringify(score))
     }
   }, [])
 
