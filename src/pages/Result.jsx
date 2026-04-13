@@ -27,14 +27,18 @@ const Result = () => {
   }
 
   const scorePct = Math.round((score / 10) * 100)
-  console.log('Component:', Result);
+
   return (
-    <div>
+    <div className="container d-flex flex-column align-items-center justify-content-center my-5">
       <h3>Result</h3>
       <h5>You scored {score} out of {10} ({scorePct}%)</h5>
-      <section>
-        <button onClick={goToMainMenu}>Main Menu</button>
-        <button onClick={retakeQuiz}>Retake Quiz</button>
+      <section className="d-flex flex-row align-items-center justify-content-center my-3 w-100">
+        <button className="btn btn-info w-25 mx-3" onClick={goToMainMenu}>
+          Main Menu
+        </button>
+        <button className="btn btn-info w-25 mx-3" onClick={retakeQuiz}>
+          Retake Quiz
+        </button>
       </section>
     </div>
   )

@@ -38,6 +38,7 @@ const Quiz = () => {
   if (result.isLoading) {
     return (
       <div>
+        <Spinner amination='grow'/>
         <h3>Loading Questions ...</h3>
       </div>
     )

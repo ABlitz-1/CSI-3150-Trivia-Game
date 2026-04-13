@@ -4,9 +4,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
   return {
     plugins: [react()],
-    mode: "development",
-  build: {
-    minify: false,
-  }
+    build: {
+      minify: false,
+    }
   }
 });
