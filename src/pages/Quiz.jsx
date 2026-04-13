@@ -10,7 +10,7 @@ import QuizContext from '../QuizContext'
 const Quiz = () => {
   const navigate = useNavigate()
   const [isAnswered, setIsAnswered] = useState(false)
-  const { category, diff } = useParams()
+  const { cat, diff } = useParams()
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, scoreDispatch] = useContext(QuizContext)
 
@@ -70,8 +70,8 @@ const Quiz = () => {
           />
         <div className="d-flex flex-column justify-content-start align-items-start">
           <div className="d-flex flex-row justify-content-between align-items-center w-100 my-2">
-            <div className="bg-ifo p-2 rounded-1">
-              {cats.find(cat => cat.value === Number(category))?.label}
+            <div className="bg-info p-2 rounded-1">
+              {cats.find(cat => cat.value === Number(cat))?.label}
             </div>
             <div className="bg-warning p-2 rounded-1">
               {diff}
