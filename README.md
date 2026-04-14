@@ -8,14 +8,23 @@ GitHub Repository URL: https://github.com/ABlitz-1/CSI-3150-Trivia-Game
 Guess it trivia is a quick and easy to use quiz webapp. It is built to both entertain and improve thinking. It does this through a sleak, interactive design to provide ease of access for it's users.
 
 ## Component Architecture
+
 • App.js: The main component that controls the routing for the pages.
+
 • Menu.js: The menu page that is first rendered when the page loads.
+
 • navbar.js: defines the navbar seen at the top of the screen.
+
 • requests.js: Handles requests for the trivia API.
+
 • question.js: defines the question structure, also handles answer checks and score.
+
 • timer.js: defines and controls the timer for each question.
+
 • Quiz.js: the quiz page that renders all of the quiz components to make the quiz work
-• QuizContext.js: defines functions used to set the score and options values inside the question                      component and Quiz page.
+
+• QuizContext.js: defines functions used to set the score and options values inside the question component and Quiz page.
+
 • Result.js: the result page that is rendered after the finish quiz button is pressed.
 
 ## Detailed Functionality
@@ -35,10 +44,15 @@ Guess it trivia is a quick and easy to use quiz webapp. It is built to both ente
 • Highscore Display: Once the quiz is over and the results page is being loaded, the highscore gets loaded from localStorage and is checked against the score at the end of the quiz. If the score is greater than the highscore, the score is set as the new highscore. Then once the menu is loaded again, the highscore is loaded from localStorage and displayed on the menu screen.
 
 ## User Manual
+
 • Step 1: Click or paste the link for the app in your browser to start the app
+
 • Step 2: Once the menu loads in, select a category and difficulty using the radio buttons and click the "start quiz" button to start the quiz.
+
 • Step 3: Click on one of the answers to answer each question and click the "next" button before the timer runs out
+
 • Step 4: Once you have answered the final question, click the "finish quiz" button to finish the quiz and go to the result screen.
+
 • Step 5: On the result screen, you can either retake the quiz or go back to the menu by clicking one of the two buttons.
 
 ## Technical Challenges & Solutions
