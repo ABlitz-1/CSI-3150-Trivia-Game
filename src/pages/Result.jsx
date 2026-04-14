@@ -12,7 +12,8 @@ const Result = () => {
     if (score > 0) {
       setFinalScore(score)
       localStorage.setItem('finalScore', JSON.stringify(score))
-    } else if (score > highscore) {
+    }
+    if (score > highscore) {
       setHighScore(score)
       localStorage.setItem('highScore', JSON.stringify(score))
     }
