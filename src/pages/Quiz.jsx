@@ -71,7 +71,7 @@ const Quiz = () => {
         <div className="d-flex flex-column justify-content-start align-items-start">
           <div className="d-flex flex-row justify-content-between align-items-center w-100 my-2">
             <div className="bg-info p-2 rounded-1">
-              {cat.label}
+              {cats.find(c => c.value === Number(cat)).label}
             </div>
             <div className="bg-warning p-2 rounded-1">
               {diff}
