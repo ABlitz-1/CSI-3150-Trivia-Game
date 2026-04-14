@@ -9,12 +9,10 @@ const Result = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    if (score !== null) {
+    if (score > 0) {
       setFinalScore(score)
-    }
-    
-    localStorage.setItem('finalScore', JSON.stringify(score))
-    if (score > highscore) {
+      localStorage.setItem('finalScore', JSON.stringify(score))
+    } else if (score > highscore) {
       setHighScore(score)
       localStorage.setItem('highScore', JSON.stringify(score))
     }
