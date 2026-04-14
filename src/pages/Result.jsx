@@ -9,6 +9,7 @@ const Result = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
+    setFinalScore(score)
     localStorage.setItem('finalScore', JSON.stringify(score))
     if (score > highscore) {
       setHighScore(score)
@@ -30,12 +31,12 @@ const Result = () => {
     navigate(-1)
   }
 
-  const scorePct = Math.round((score / 10) * 100)
+  const scorePct = Math.round((finalscore / 10) * 100)
   
   return (
     <div className="container d-flex flex-column align-items-center justify-content-center my-5">
       <h3>Result</h3>
-      <h5>You scored {score} out of {10} ({scorePct}%)</h5>
+      <h5>You scored {finalscore} out of {10} ({scorePct}%)</h5>
       <section className="d-flex flex-row align-items-center justify-content-center my-3 w-100">
         <button className="btn btn-info text-white w-25 mx-3" onClick={goToMainMenu}>
           Main Menu
