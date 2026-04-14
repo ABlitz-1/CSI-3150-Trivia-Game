@@ -1,7 +1,11 @@
-# CSI-3150-Trivia-Game
+# Guess it Trivia (CSI-3150 Project)
+
 Name: Aiden Blitz
+
 Project Option Chosen: Trivia
+
 Live App URL:  csi-3150-trivia-game.vercel.app
+
 GitHub Repository URL: https://github.com/ABlitz-1/CSI-3150-Trivia-Game
 
 ## Project Overview
