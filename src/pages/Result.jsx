@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom'
 
 const Result = () => {
   const [highscore, setHighScore] = useState(localStorage.getItem('highScore'))
+  const [finalscore, setFinalScore] = useState(localStorage.getItem('finalScore'))
   const [score, scoreDispatch] = useContext(QuizContext)
   const navigate = useNavigate()
 
   useEffect(() => {
-    if(score === null) {
-      navigate('/')
-    } else if (score > highscore) {
+    localStorage.setItem('finalScore', JSON.stringify(score))
+    if (score > highscore) {
       setHighScore(score)
       localStorage.setItem('highScore', JSON.stringify(score))
     }
