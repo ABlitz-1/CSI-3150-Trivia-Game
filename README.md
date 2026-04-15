@@ -64,5 +64,4 @@ Guess it trivia is a quick and easy to use quiz webapp. It is built to both ente
 The largest bug/hurdle I encountered during development was React error #130, meaning that one of my components was undefined. I got stuck on this error for a bit, but I was able to fix it by changing a couple lines in the Menu component from <Form.check> to <Form.Check> and also adding question marks where I am accessing object properties, for example, changing question.correct_answer to question?.correct answer. By fixing this bug, I learned that in React, data may be loaded asynchronously, meaning that some objects could be undefined while some others are already loaded.
 
 ## Demo Video Link
-URL: YouTube /Google Drive Link
-(Note: Ensure the permissions are set so that anyone can view it)
+URL: https://drive.google.com/file/d/1WZ41xMf9HyK6ogMTXnSENnZ1--_bBLXW/view?usp=sharing
